@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama/qwen3-coder:30b-a3b-q4_K_M",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      },
+      "models": {
+        "dolphin3:latest": {
+          "name": "dolphin3:latest",
+          "reasoning": true
+        },
+        "deepseek-r1:1.5b": {
+          "name": "deepseek-r1:1.5b",
+          "reasoning": true,
+          "tool_call": false
+        },
+        "qwen2.5-coder:14b": {
+          "name": "qwen2.5-coder:14b"
+        },
+        "gemini-3-flash-preview:latest": {
+          "name": "gemini-3-flash-preview:latest"
+        },
+        "llama3.2:latest": {
+          "name": "llama3.2:latest"
+        },
+        "qwen3-coder:30b-a3b-q4_K_M": {
+          "name": "qwen3-coder:30b-a3b-q4_K_M"
+        }
+      }
+    },
+    "google": {
+      "options": {
+        "projectId": "cli-gemini"
+      }
+    }
+  },
+  "plugin": [
+    "opencode-gemini-auth@latest"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "google_auth": false,
+  "lsp": {
+    "typescript-language-server": {
+      "command": ["typescript-language-server", "--stdio"],
+      "extensions": [".ts", ".tsx", ".js", ".jsx"],
+      "priority": 10
+    },
+    "pylsp": {
+      "disabled": true
+    },
+    "html": {
+      "filetypes": ["html", "twig", "hbs"]
+    },
+    "cssls": {},
+    "tailwindcss": {},
+    "dockerls": {},
+    "sqlls": {},
+    "terraformls": {},
+    "jsonls": {},
+    "yamlls": {},
+    "rust-analyzer": {
+      "settings": {
+        "rust-analyzer": {
+          "cargo": {
+            "allFeatures": true
+          },
+          "checkOnSave": true
+        }
+      }
+    },
+    "solidity": {
+      "cmd": ["nomicfoundation-solidity-language-server", "--stdio"],
+      "single_file_support": true,
+      "checkOnSave": true
+    },
+    "lua_ls": {
+      "settings": {
+        "Lua": {
+          "completion": {
+            "callSnippet": "Replace"
+          },
+          "runtime": {
+            "version": "LuaJIT"
+          },
+          "workspace": {
+            "checkThirdParty": false,
+            "library": "vim.api.nvim_get_runtime_file(\"\", true)"
+          },
+          "diagnostics": {
+            "globals": ["vim"],
+            "disable": ["missing-fields"]
+          },
+          "format": {
+            "enable": false
+          }
+        }
+      }
+    }
+  },
+  "agents": {
+    "Sisyphus": {
+      "model": "opencode/big-pickle",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "allow",
+        "external_directory": "deny"
+      }
+    },
+    "librarian": {
+      "model": "opencode/big-pickle",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "allow",
+        "external_directory": "deny"
+      }
+    },
+    "oracle": {
+      "model": "opencode/big-pickle",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "allow",
+        "external_directory": "deny"
+      }
+    },
+    "frontend-ui-ux-engineer": {
+      "model": "google/gemini-3-pro-high",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "allow",
+        "external_directory": "deny"
+      }
+    },
+    "document-writer": {
+      "model": "google/gemini-3-flash",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "deny",
+        "external_directory": "deny"
+      }
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash",
+      "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "webfetch": "deny",
+        "external_directory": "deny"
+      }
+    }
+  }
+}
