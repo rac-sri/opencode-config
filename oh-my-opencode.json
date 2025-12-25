@@ -1,118 +1,33 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
-  "google_auth": false,
-  "lsp": {
-    "typescript-language-server": {
-      "command": ["typescript-language-server", "--stdio"],
-      "extensions": [".ts", ".tsx", ".js", ".jsx"],
-      "priority": 10
-    },
-    "pylsp": {
-      "disabled": true
-    },
-    "html": {
-      "filetypes": ["html", "twig", "hbs"]
-    },
-    "cssls": {},
-    "tailwindcss": {},
-    "dockerls": {},
-    "sqlls": {},
-    "terraformls": {},
-    "jsonls": {},
-    "yamlls": {},
-    "rust-analyzer": {
-      "settings": {
-        "rust-analyzer": {
-          "cargo": {
-            "allFeatures": true
-          },
-          "checkOnSave": true
-        }
-      }
-    },
-    "solidity": {
-      "cmd": ["nomicfoundation-solidity-language-server", "--stdio"],
-      "single_file_support": true,
-      "checkOnSave": true
-    },
-    "lua_ls": {
-      "settings": {
-        "Lua": {
-          "completion": {
-            "callSnippet": "Replace"
-          },
-          "runtime": {
-            "version": "LuaJIT"
-          },
-          "workspace": {
-            "checkThirdParty": false,
-            "library": "vim.api.nvim_get_runtime_file(\"\", true)"
-          },
-          "diagnostics": {
-            "globals": ["vim"],
-            "disable": ["missing-fields"]
-          },
-          "format": {
-            "enable": false
-          }
-        }
-      }
-    }
-  },
+  "google_auth": true,
   "agents": {
+    "Ask": {
+      "model": "google/gemini-3-pro-low"
+    },
     "Sisyphus": {
-      "model": "opencode/big-pickle",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "allow",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-pro-high"
+    },
+    "Webcrawler": {
+      "model": "google/gemini-3-pro-low"
+    },
+    "Planner-Sisyphus": {
+      "model": "google/gemini-3-pro-high"
     },
     "librarian": {
-      "model": "opencode/big-pickle",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "allow",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-pro-low"
     },
     "oracle": {
-      "model": "opencode/big-pickle",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "allow",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-pro-high"
     },
     "frontend-ui-ux-engineer": {
-      "model": "google/gemini-3-pro-high",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "allow",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-pro-high"
     },
     "document-writer": {
-      "model": "google/gemini-3-flash",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "deny",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-flash"
     },
     "multimodal-looker": {
-      "model": "google/gemini-3-flash",
-      "permission": {
-        "edit": "ask",
-        "bash": "ask",
-        "webfetch": "deny",
-        "external_directory": "deny"
-      }
+      "model": "google/gemini-3-flash"
     }
   }
 }
