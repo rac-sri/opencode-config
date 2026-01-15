@@ -1,6 +1,5 @@
 ---
 description: Code Q&A Specialist
-model: google/gemini-3-pro-low
 ---
 
 # Ask Agent - Code Q&A Specialist

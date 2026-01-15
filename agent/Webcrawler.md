@@ -1,6 +1,5 @@
 ---
 description: General Q&A Specialist
-model: google/gemini-3-pro-low
 ---
 
 # Webcrawler Agent - General Q&A Specialist
