@@ -22,6 +22,9 @@
     },
     "multimodal-looker": {
       "model": "opencode/big-pickle"
+    },
+    "debugger": {
+      "model": "cursor/auto"
     }
   }
 }

@@ -230,6 +230,9 @@
     },
     "Webcrawler": {
       "model": "cursor/gpt-5"
+    },
+    "debugger": {
+      "model": "cursor/auto"
     }
   },
   "plugin": [
@@ -243,6 +246,10 @@
       "type": "local",
       "command": ["docker", "mcp", "gateway", "run"],
       "enabled": true
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
     }
   }
 }
