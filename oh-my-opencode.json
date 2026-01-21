@@ -3,28 +3,28 @@
   "google_auth": false,
   "agents": {
     "Sisyphus": {
-      "model": "cursor/auto"
+      "model": "google/gemini-3-pro-high"
     },
     "Planner-Sisyphus": {
-      "model": "cursor/sonnet-4.5-thinking"
+      "model": "google/claude-opus-4-5-thinking-high"
     },
     "librarian": {
-      "model": "opencode/grok-code"
+      "model": "opencode/glm-4.7-free"
     },
-    "oracle": {
-      "model": "cursor/gpt-5.2"
+    "explore": {
+      "model": "opencode/grok-code"
     },
     "frontend-ui-ux-engineer": {
-      "model": "opencode/grok-code"
+      "model": "opencode/glm-4.7-free"
     },
     "document-writer": {
-      "model": "cursor/gpt-5.2"
+      "model": "opencode/grok-code"
     },
     "multimodal-looker": {
       "model": "opencode/big-pickle"
     },
     "debugger": {
-      "model": "cursor/auto"
+      "model": "opencode/glm-4.7-free"
     }
   }
 }
