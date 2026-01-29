@@ -2,29 +2,66 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "google_auth": false,
   "agents": {
-    "Sisyphus": {
-      "model": "google/gemini-3-pro-high"
+    "sisyphus": {
+      "model": "opencode/claude-opus-4-5"
     },
-    "Planner-Sisyphus": {
-      "model": "google/claude-opus-4-5-thinking-high"
+    "prometheus": {
+      "model": "opencode/gpt-5.2-codex"
+    },
+    "oracle": {
+      "model": "opencode/gpt-5.2"
     },
     "librarian": {
-      "model": "opencode/glm-4.7-free"
-    },
-    "explore": {
-      "model": "opencode/grok-code"
-    },
-    "frontend-ui-ux-engineer": {
-      "model": "opencode/glm-4.7-free"
-    },
-    "document-writer": {
-      "model": "opencode/grok-code"
-    },
-    "multimodal-looker": {
       "model": "opencode/big-pickle"
     },
-    "debugger": {
-      "model": "opencode/glm-4.7-free"
+    "explore": {
+      "model": "opencode/gpt-5-nano"
+    },
+    "metis": {
+      "model": "opencode/kimi-k2.5"
+    },
+    "momus": {
+      "model": "opencode/gpt-5.2"
+    },
+    "atlas": {
+      "model": "opencode/kimi-k2.5"
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash"
+    },
+    "frontend-ui-ux-engineer": {
+      "model": "google/gemini-3-pro-high"
+    },
+    "document-writer": {
+      "model": "google/gemini-3-flash"
+    },
+    "sisyphus-junior": {
+      "model": "opencode/claude-sonnet-4-5"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-high"
+    },
+    "ultrabrain": {
+      "model": "opencode/gpt-5.2-codex",
+      "variant": "xhigh"
+    },
+    "artistry": {
+      "model": "google/gemini-3-pro-high",
+      "variant": "max"
+    },
+    "quick": {
+      "model": "opencode/claude-haiku-4-5"
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-pro-low"
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-pro-high"
+    },
+    "writing": {
+      "model": "google/gemini-3-flash"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "ask-questions-if-underspecified.md": {
+    "source": "ethpandaops",
+    "source_path": "ask-questions-if-underspecified.md",
+    "source_hash": "d60c227cd4a8bcde1f7d345b658d9a910df7c74501f9d368692b65617624539c",
+    "source_mtime": 1769007285.1254628,
+    "installed_at": 1769007355.747839
+  },
+  "prepare-one-shot.md": {
+    "source": "ethpandaops",
+    "source_path": "prepare-one-shot.md",
+    "source_hash": "5a9cc474d486c82017c6f437f88cecf85ebc5a2d5590f58a329369863a5275e2",
+    "source_mtime": 1769007285.1283834,
+    "installed_at": 1769007361.306159
+  },
+  "debug-issue-with-logs.md": {
+    "source": "ethpandaops",
+    "source_path": "debug-issue-with-logs.md",
+    "source_hash": "be257aa22b00df77d251c38a1fc4a96e9d59b2bbedddcf514b4aeadbb437774e",
+    "source_mtime": 1769007285.1272292,
+    "installed_at": 1769007361.691481
+  },
+  "remove-ai-influence-from-text.md": {
+    "source": "ethpandaops",
+    "source_path": "remove-ai-influence-from-text.md",
+    "source_hash": "f796081805fa8696cdae81bedbec540694eafdd9dbf4bbe629964f0cad9a20d8",
+    "source_mtime": 1769007285.1287668,
+    "installed_at": 1769007370.447102
+  }
+}
